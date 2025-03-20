@@ -86,7 +86,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const targetId = this.getAttribute("href").substring(1);
         document.getElementById(targetId)?.scrollIntoView({
             behavior: "smooth",
-            block: "start", // Aligns the target element to the top with proper spacing
+            block: "start", 
             inline: "nearest"
         });
     });
